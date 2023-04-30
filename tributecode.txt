@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <style>
+        body {
+            background-color: hsl(0, 23%, 78%);
+            margin: 5%;
+        }
+        #title {
+            text-align: center;
+            text-shadow: 5px 5px 10px white;
+            font-size: 7vh;
+        }
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 50%
+        }
+        #title {
+            text-align: center;
+            text-shadow: 5px 5px 10px white;
+            font-size: 7vh;
+        }
+        div#tribute-data {
+            background-color: rgba(173, 216, 192, 0.25);
+            box-shadow: 20px 20px 20px #111411;
+            font-family: Georgia;
+            padding: 25px 25px;
+            margin: 100px;
+            margin-top: 50px;
+        }
+        h1.title-APJ {
+            font-size: 35px;
+            color: white;
+            text-align: center;
+            text-shadow: 5px 5px 10px white;
+        }
+        #tribute-link {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <h1 id="title">
+            A. P. J. Abdul Kalam
+        </h1>
+ 
+        <div id="img">    
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/A._P._J._Abdul_Kalam.jpg" image
+                alt="Error Loading Image">  
+        </div>
+        <div id="tribute-data">
+        <h2 id ="title">
+            About The Legend
+        </h2>    
+        <p> 
+        Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace scientist and statesman who served as the 11th president of India from 2002 to 2007. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering.He was a great human being, committed leader, and unparalleled statesman.He wrote many inspirational books. he was a charismatic speaker. His message for the youth of India filled them with new confidence. 
+        <br>He appealed to all Indians to adopt the following words: “I can do it. We can do it. India can do it.” His vision was to see India standing among the most advanced nations of the world by 2020.<br>I adore his teachings. I feel if we follow his teachings, we will achieve our national goals much faster.
+        His dream of being an air force pilot was lost by one rank. Dr. Kalam learned to accept failure, move on and have faith on the larger plan of almighty in destiny. <br>Later, he joined the Ministry of Defence. One January 11, 1999, Avro ASP aircraft crashed killing eight men. Dr. Kalam met the families who received aid from the government. But this fall made him realize that the sacrifices of men on fields is what actually builds up a nation.
+        <br>Great Indian scientist and politician who played a leading role in the development of India’s missile and nuclear weapons
+        programs.
+        </p>
+</body>
+</html>
