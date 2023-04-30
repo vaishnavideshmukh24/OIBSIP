@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<img src ="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg" alt="wallpaper">
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+         font-family:'poppins',sans-serif;
+      }
+      body{
+         background-color: #141616;
+         display: grid;
+         height: 100vh;
+         place-items: center;
+      }
+      .main{
+         width: 400px;
+         height: 450px;
+         background-color:<img src ="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg"alt="wallpaper"> ;
+         position: absolute;
+         border: 6px solid white;
+         border-radius: 6px; 
+      }
+      .main input[type='text'] {
+         width: 80%;
+         position: relative;
+         height: 80px;
+         top: 5px;
+         text-align: right;
+         padding: 3px 6px;
+         outline: none;
+         font-size: 40px;
+         border: 5px solid white ;
+         display: flex;
+         margin: auto;
+         border-radius: 6px;
+         color: black;
+      }
+      .btn input[type='button']{
+         width:90px;
+         padding: 2px;
+         margin: 2px 0px;
+         position: relative;
+         left: 13px;
+         top: 20px;
+         height: 60px;
+         cursor: pointer;
+         font-size: 18px;
+         transition: 0.5s;
+         background-color: white;
+         border-radius: 6px;
+         color: rgb(223, 219, 219);
+      }
+      .btn input[type='button']:hover{
+         background-color: rgb(5, 5, 5);
+         color: black;
+      }
+   </style>
+   <script>
+      function Solve(val) {
+         var v = document.getElementById('res');
+         v.value += val;
+      }
+         function paranthesis(val) {
+         var v = document.getElementById('res');
+         v.value += val;
+      }
+      function Result() {
+         var num1 = document.getElementById('res').value;
+         var num2 = eval(num1);
+         document.getElementById('res').value = num2;
+         
+      }
+      function Clear() {
+         var inp = document.getElementById('res');
+         inp.value = '';
+      }
+      function Back() {
+         var ev = document.getElementById('res');
+         ev.value = ev.value.slice(0,-1);
+      }
+   </script>
+   <title>Calulator</title>
+</head>
+<body>
+   <div class="main">
+      <input type="text" id = 'res'>
+      <div class="btn">
+         <input type="button" class="btn" value = 'Clear' onclick = "Clear()">
+         <input type="button" class="btn" value = 'x' onclick = "Solve('*')">
+         <input type="button" class="btn" value = '%' onclick ="Solve('%')">
+         <input type="button" class="btn" value = 'Back' onclick = "Back()">
+         <br>
+         <input type="button" class="btn" value = '7' onclick = "Solve('7')">
+         <input type="button" class="btn" value = '8' onclick = "Solve('8')">
+         <input type="button" class="btn" value = '9' onclick = "Solve('9')">
+         <input type="button" class="btn" value = '-' onclick = "Solve('-')">
+         <br>
+         <input type="button" class="btn" value = '4' onclick = "Solve('4')">
+         <input type="button" class="btn" value = '5' onclick = "Solve('5')">
+         <input type="button" class="btn" value = '6' onclick = "Solve('6')">
+         <input type="button" class="btn" value = '+' onclick = "Solve('+')">
+         <br>
+         <input type="button" class="btn" value = '1' onclick = "Solve('1')">
+         <input type="button" class="btn" value = '2' onclick = "Solve('2')">
+         <input type="button" class="btn" value = '3' onclick = "Solve('3')">
+         <input type="button" class="btn" value = '/' onclick = "Solve('/')">
+         <br>
+         <input type="button" class="btn" value = '.' onclick = "Solve('.')">
+         <input type="button" class="btn" value = '0' onclick = "Solve('0')">
+         <input type="button" class="btn" value = '00' onclick = "Solve('00')">
+         <input type="button" class="btn" value = '=' onclick = "Result('=')">
+      </div>
+   </div>
+</body>
+</html>
